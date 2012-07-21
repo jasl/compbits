@@ -2,3 +2,4 @@ demo
 source/stylesheets
 source/_posts
 .sass-cache
+.idea

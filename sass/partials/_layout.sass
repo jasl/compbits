@@ -39,8 +39,8 @@ body
     a
       display: block
       +replace-text("../images/icons.png", $social-link-width, $social-link-height)
-      &.github:hover
-        background-position: 0 (-$social-link-height)
+    &.github:hover
+      background-position: 0 (-$social-link-height)
       &.feed
         background-position: (-$social-link-width) 0
         &:hover
@@ -70,7 +70,7 @@ body
     background-color: #b3b3b3
     color: white
     &:hover, &.current
-      background-color: #4d4d4d
+    background-color: #4d4d4d
 
 #main
   margin-top: 15px
@@ -101,29 +101,16 @@ body
     @extend .clear
     margin-bottom: 10px
 
-    &> div
-      float: left
-      margin-right: 40px
-    &> .license
-      width: 180px
-    &> .posts
-      max-width: 300px
-    &> .douban
-      img
-        max-width: 45px
-      table
-        margin-bottom: 0
-      td
-        padding: 0 15px 0 0
-        vertical-align: top
-      .view-douban
-        color: $text-color
-    &> .archives
-      float: right
-      margin-right: 0
-      text-align: right
-      .view-all
-        color: $text-color
+  &> div
+    float: left
+    margin-right: 40px
+  &> .license
+    width: 180px
+  &> .posts
+    max-width: 300px
+  &> .taglist
+    max-width: 300px
+    margin-right: 0
   .powered
     margin-bottom: 0
     color: #888888

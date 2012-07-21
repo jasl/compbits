@@ -5,15 +5,15 @@
 $blueprint-font-family: Helvetica, Arial, "Microsoft Yahei", "WenQuanYi Micro Hei", STXihei, SimHei, sans-serif
 $text-color: #444444
 
-+blueprint-typography
-+blueprint-interaction
-+blueprint-utilities
+  +blueprint-typography
+  +blueprint-interaction
+  +blueprint-utilities
 
 =replace-text($img, $width: false, $height: false)
   @if $width
-    width: $width
+  width: $width
   @if $height
-    height: $height
+  height: $height
   font-size: 0
   text-indent: -9999px
   background: url($img) no-repeat
@@ -40,11 +40,11 @@ $text-color: #444444
   color: $text-color
   font-size: 2.5em
   font-weight: bold
-  +text-shadow(-1px 0 0 #fae3a9)
+  +text-shadow(none)
   a
     color: $text-color
     &:visited, &:active
-      color: $text-color
+    color: $text-color
     &:hover
       border-bottom: 1px dotted #aaaaaa
       color: #666666
@@ -60,8 +60,8 @@ h1
   margin-bottom: 13px
   font-size: 26px
 
-@for $i from 2 through 4
-  h#{$i}
-    @extend .title
-    margin-bottom: 17px - $i * 5px
-    font-size: 30px - $i * 5px
+  @for $i from 2 through 4
+h#{$i}
+  @extend .title
+  margin-bottom: 17px - $i * 5px
+  font-size: 30px - $i * 5px
